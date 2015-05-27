@@ -1,0 +1,63 @@
+﻿@charset "utf-8";
+/* CSS Document */
+*{margin:0px;padding:0px;}
+body,ul,ol,h1,h2,h3,h4,h5,h6,p,form,input,ul,ol,dl,dd,dt{font-family: "Hiragino Sans GB","Microsoft YaHei","微软雅黑",tahoma,arial,simsun,"宋体";color:#666;font-size:12px;}
+ul,ol{list-style:none;}
+i,em{ font-style:normal;}
+a{ color:#000;text-decoration:none;cursor:pointer;}
+li{list-style:none}
+li a:hover{text-decoration:none;}
+a img{border:none;}
+.clear{ clear:both; font-size:0px; line-height:0px; height:0px; visibility:hidden;}
+body{color:#666; background:#fff;}
+.left{ float:left;}
+.right{ float:right;}
+.mr0{ margin-right:0;}
+.ml0{ margin-left:0;}
+.center{text-align:center;}
+form{ border:none; list-style:none;}
+img {behavior: url("../../css/pngbehavior.htc");vertical-align:middle;border:0 none;height:auto;}
+table{border-collapse:collapse;border-spacing:0}
+label{margin-bottom:5px;display:block;}
+label,input,button,select,textarea{font-size:13px;line-height:16px;font-weight:normal;}
+textarea{vertical-align:middle;}
+table{border-collapse:collapse;}
+.clearfix:after {content: "."; display: block;  height: 0; font-size:0; clear: both; visibility: hidden;}
+.clearfix {display: inline-block;}   
+* html .clearfix {height:1%;}
+.clearfix {display: block;}
+*html{ background-image:url(about:blank);background-attachment:fixed;}
+a {blr:e­xpression(this.onFocus=this.blur())}
+area {blr:e­xpression(this.onFocus=this.blur()); display:block;}
+#main{ height:auto; width:980px; margin:0 auto 60px; clear:both;min-height:530px;}
+body{ width:100%; height:auto;}
+
+
+/*header 开始*/
+.header{ width:100%; height:60px; border-bottom:1px solid #e0e0e0; background:#5a97ff url(../images/adminMessage/youxin.png) no-repeat center center;}
+.header .left{ width:100px; height:60px; margin-left:22px;background:url(../images/adminMessage/logo.png) no-repeat center center;}
+.header .right{ width:auto; background:url(../images/icon-01.png) no-repeat center center #609fff; padding-right:161px; height:60px; margin-right:22px; position:relative;}
+.header .right a{ display:block; position:absolute; width:80px; height:60px;}
+.header .right a.m-pw{ top:0; right:81px;border-right:1px solid #5a97ff;}
+.header .right a.a-edit{ top:0; right:0;}
+.header em{float:right; height:60px; padding:0 20px; line-height:60px; font-size:16px; color:#fff; display:block;}
+/*header 结束*/
+
+/*左边li开始*/
+.center{ text-align: left;}
+.tab-ul{ width:100%; height:auto; margin-left:-1px;}
+.tab-li{ width:100%; height:60px; background:#f0f0f0; border-bottom:1px solid #e7e7e7; }
+.tab-li a{ display:block; padding:0 15%; height:60px; overflow:hidden;}
+.tab-li i{ width:41px; height:42px; margin:10px 10px 0 0; background:url(../images/backstage/tab-icon.png) no-repeat center left; float:left;}
+.tab-li i.i-01{ background-position:0 0;}
+.tab-li i.i-02{ background-position:0 -51px;}
+.tab-li i.i-03{ background-position:0 -102px;}
+.tab-li i.i-04{ background-position:0 -153px;}
+.tab-li i.i-05{ background-position:0 -204px;}
+.tab-li p{ width:auto; line-height:60px;font-size:16px; color:#1d1d1d;}
+.tab-ul .active a,.tab-ul a:hover{ background:#fbfbfb;}
+.tab-ul .active a i.i-01,.tab-ul a:hover i.i-01{ background-position:-61px 0;}
+.tab-ul .active a i.i-02,.tab-ul a:hover i.i-02{ background-position:-61px -51px;}
+.tab-ul .active a i.i-03,.tab-ul a:hover i.i-03{ background-position:-61px -102px;}
+.tab-ul .active a i.i-04,.tab-ul a:hover i.i-04{ background-position:-61px -153px;}
+.tab-ul .active a i.i-05,.tab-ul a:hover i.i-05{ background-position:-61px -204px;}

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.stone.company.persistence.ProfessionMapper">
+	<resultMap type="com.stone.company.domain.Profession" id="returnProfessionMap">
+		<id property="id" column="id" />
+		<result property="uid" column="uid" />
+		<result property="company" column="company" />
+		<result property="address" column="address" />
+		<result property="position" column="position" />
+		<result property="service" column="service" />
+		<result property="technology" column="technology" />
+		<result property="salary_0" column="salary_0" />
+		<result property="salary_1" column="salary_1" />
+		<result property="salary_2" column="salary_2" />
+		<result property="salary_3" column="salary_3" />
+		<result property="salary_4" column="salary_4" />
+		<result property="welfare" column="welfare" />
+		<result property="entrySkills" column="entrySkills" />
+		<result property="impression" column="impression" />
+		<result property="addTime" column="addtime" />
+		<result property="dataUrl" column="dataurl" />
+		<result property="pv" column="pv" />
+	</resultMap>
+
+	<insert id="insertProfession">
+		insert into
+		profession(uid,company,address,position,service,technology,salary_0,
+		salary_1,salary_2,salary_3,salary_4,welfare,entrySkills,impression,dataurl)
+		values(#{uid},#{company},#{address},#{position},#{service},
+		#{technology},#{salary_0},#{salary_1},#{salary_2},#{salary_3},#{salary_4},
+		#{welfare},#{entrySkills},#{impression},#{dataUrl})
+	</insert>
+
+	<delete id="deleteProfession">
+		delete from profession where id = #{id}
+	</delete>
+
+	<update id="updateProfession">
+		update profession
+		<set>
+			<if test="null!=contact">contact = #{contact},</if>
+			<if test="null!=company">company = #{company},</if>
+			<if test="null!=address">address = #{address},</if>
+			<if test="null!=position">position = #{position},</if>
+			<if test="null!=address">technology = #{technology},</if>
+			<if test="null!=salary_0">salary_0 = #{salary_0},</if>
+			<if test="null!=salary_1">salary_1 = #{salary_1},</if>
+			<if test="null!=salary_2">salary_2 = #{salary_2},</if>
+			<if test="null!=salary_3">salary_3 = #{salary_3},</if>
+			<if test="null!=salary_4">salary_4 = #{salary_4},</if>
+			<if test="null!=welfare">welfare = #{welfare},</if>
+			<if test="null!=entrySkills">entrySkills = #{entrySkills},</if>
+			<if test="null!=impression">impression = #{impression}</if>
+		</set>
+		where id = #{id}
+	</update>
+
+	<select id="findProfessionById" resultMap="returnProfessionMap">
+		select * from
+		profession where id = #{id}
+	</select>
+
+	<select id="queryProfession" resultMap="returnProfessionMap">
+		select * from profession
+		where uid = #{uid}
+	</select>
+
+	<select id="queryAll" resultMap="returnProfessionMap">
+		select * from profession
+	</select>
+</mapper>

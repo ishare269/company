@@ -1,0 +1,69 @@
+
+/* CSS Document */
+input {outline: none;}
+textarea {outline: none;}
+.tancengWrap{ position:fixed; width:100%; height:100%; top:0; left:0;z-index:1;}
+.tancengBg{ width:100%; height:100%; position:absolute; background:#000;filter:alpha(opacity=30);-moz-opacity:0.3;-khtml-opacity: 0.3;opacity: 0.3; z-index:1; top:0; left:0;}
+.divTancengWrap{ position:fixed; width:100%; height:100%; top:0; left:0;z-index:1;}
+.tancengMain{width:570px; position: absolute; background:#fff; border-radius:5px; left:50%; top:50%; 
+ margin-left:-285px; z-index:2;}
+.divTancengMain{width:500px; padding:15px 35px 20px; position: absolute; background:#fff; border-radius:5px; left:50%; top:50%; margin-left:-285px; z-index:2;}
+.divTancengMainDelete{width:300px;margin-left:-185px;}
+.divTancengMain h1{font:18px/24px '微软雅黑';padding-bottom:8px;}
+.divTancengMain table{width:100%;border-left:1px solid #e8e8e8;border-top:1px solid #e8e8e8;}
+.divTancengMain table td{padding:5px;font-size:14px;}
+.divTancengMain	table td input,.divTancengMain	table td select{width:100%;border:1px solid #EDEDED;height:30px;}
+.divTancengMain	table td textarea{width:100%;border:1px solid #EDEDED;}
+.divTancengMain table td a.aBtns{display:inline-block;width:38px;height:17px;line-height:17px;padding:3px;margin:0 25px;border:1px solid #e7e7e7;background-color:#e7e7e7;border-radius:5px;}
+.divTancengMain table td a.aBtns:hover{background-color:#5a97ff;color:#FFF;}
+.divTancengMain .del-btn{cursor:pointer;display:block;background-color:#5a97ff;color:#FFF;width:70px;height:28px;line-height:28px;border:0 none;border-radius:5px;margin-top:10px;margin-left:115px;}
+.editWrap{height:308px; margin-top:-154px; }
+.passwordWrap{ height:540px;margin-top:-270px;}
+.divContentMain{padding-top:50px; margin:0 auto; height:auto; }
+.editMain,.passwordMain{ padding-top:60px; width:437px; margin:0 auto; height:auto; }
+.tancengWrap h1{ width:100%; height:auto; text-align:center; color:#1c1c1c; font-size:26px; font-style:normal; font-weight:500; line-height:40px; margin-bottom:29px;}
+.tancengWrap .input{ width:387px; height:40px; padding:10px 25px; margin:13px auto 17px; background:#f2f2f2; border-radius:5px; clear:both;}
+.tancengWrap label{ display:block; width:65px; float:left; line-height:40px; font-size:20px; margin-right:2px;text-align:justify;text-justify:inter-ideograph;}
+.tancengWrap .text{display:block; width:310px; float:left; line-height:40px; font-size:20px; margin-right:2px;text-align: left; border:0; background:#f2f2f2; height:40px;}
+.remenber{ width:150px;height:37px;margin:12px 0 29px 16px; line-height:37px; font-size:20px; cursor:pointer;}
+.remenber i{ width:37px; height:37px; background:url(../../../images/adminMessage/duigou.png) no-repeat; background-position:0 0; display:block; float: left; margin-right:15px;}
+.remenber i.on{ background-position:-41px 0;}
+.login-btn{ width:100%; height:60px; background:#5a97ff; cursor:pointer; line-height:60px; color:#fff; text-align:center; display:block; font-size:24px; border-radius:5px; border:0; letter-spacing:3px;}
+.passwordMain .text{ width:210px;}
+.passwordMain label.label-01{ width:110px;}
+.passwordMain label.label-02{ width:150px;}
+.tancengWrap,.divTancengWrap,.tancengMain{ display:none;}
+.a-del{ position:absolute; background:url(../../images/adminMessage/del.png) no-repeat; width:20px; height:19px; top:15px; right:15px;}
+.tancengMain{width:400px; position: absolute; background:#fff; border-radius:5px; left:50%; top:50%; 
+ margin-left:-200px; z-index:2;}
+.editWrap{height:208px; margin-top:-104px; }
+.passwordWrap{ height:400px;margin-top:-200px;}
+.saveWrap{ height:300px;margin-top:-212px;}
+.editMain,.passwordMain{ padding-top:30px; width:330px; margin:0 auto; height:auto; }
+.tancengWrap h1{ font-size:16px; line-height:28px;}
+.passwordMain label.label-01{ width:80px;}
+.passwordMain label.label-02{ width:120px;}
+.tancengWrap .input{ width:280px; height:30px; padding:7px 25px; margin:13px auto 17px; background:#f2f2f2; border-radius:5px;}
+.tancengWrap label{ line-height:30px; font-size:16px;}
+.tancengWrap .text{ width:155px; line-height:30px; height:30px; font-size:16px;}
+
+
+/*派单MASK*/
+#div_dispatchOrder h1{ font-size:16px; line-height:28px;}
+#div_dispatchOrder label{float:left;}
+#div_dispatchOrder input{float:right;border:0px;}
+#div_dispatchOrder .text{background-color:#f2f2f2;}
+#div_dispatchOrder .input{ width:280px; height:30px; padding:7px 25px; margin:13px auto 17px; background:#f2f2f2; border-radius:5px;}
+#div_dispatchOrder label{ line-height:30px; font-size:16px;}
+#div_dispatchOrder .text{ width:155px; line-height:30px; height:30px; font-size:16px;}
+#div_dispatchOrder .saveWrap{ height:380px;margin-top:-185x;}
+#div_dispatchOrder .divSelctBox{position:relative;background:url(../../images/admin/select_icon.jpg) no-repeat 290px center #f2f2f2;}
+#div_dispatchOrder .divSelectValue{width:155px;height:30px;line-height:30px;font-size:16px;padding:7px 25px;position:absolute;left:125px;top:0;z-index:2;}
+#div_dispatchOrder .ulSelectOption{display:none;width:330px;height:88px;overflow:auto;line-height:30px;font-size:16px;position:absolute;left:0;top:44px;z-index:2; background-color:#f2f2f2;}
+#div_dispatchOrder .ulSelectOption li{padding:7px 25px 7px 150px;}
+#div_dispatchOrder .ulSelectOption li.on{background-color:#e8e8e8;}
+
+
+/*Waiting MASK*/
+#div_Wating img{ width:32px; height:32px; position: absolute;left:50%; top:50%; margin-top:-16px; margin-left:-16px; z-index:6;}
+#div_Wating .tancengBg{ width:100%; height:100%; position:absolute; background:#000;filter:alpha(opacity=30);-moz-opacity:0.3;-khtml-opacity: 0.3;opacity: 0.3; z-index:10; top:0; left:0;}

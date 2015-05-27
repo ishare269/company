@@ -1,0 +1,47 @@
+html{ overflow-x:hidden;background-color:#f0f0f0;}
+body{ overflow-x:hidden;}
+.center{ width:100%; overflow-x:hidden; background:#f0f0f0;}
+.center-left{ width:240px; float: left; height:100%;background:#e7e7e7 url(../../images/adminMessage/solid.png) repeat-y right top;position:relative;float:left; margin-right:-240px;}
+
+.center-right{ width:100%; float:right;}
+.cr-wrap{ margin-left:240px;}
+.tabMain-03,.tabMain-02,.tabMain-04,.tabMain-05{ display:none;}
+.tabMain-03{ background:#fff; width:100%;}
+.right-top{ width:94%; height:31px; padding:15px 3%; background:#f5f5f5; clear:both; overflow:hidden;}
+.right-top p{ width:auto; float:left; margin-right:15px; color:#1d1d1d; font-size:14px; line-height:31px;}
+.right-top p input{ outline:none; float:left;}
+.right-top p label{ width:auto; float: left; line-height:31px;}
+.right-top p b{ width:auto; padding:0 10px;line-height:31px; float: left; color:#1d1d1d; font-weight:500;}
+.right-top .inputys{  border:0; background:#e7e7e7; height:21px; padding:5px 15px; border-radius:30px; color:#4d4d4d; width:100px; line-height:21px;}
+.right-top .inputwd{ width:115px;}
+.btn{  border:0; background:#e7e7e7; height:31px; padding:0 15px; border-radius:30px; color:#4d4d4d; margin-right:15px; width:70px; cursor:pointer; line-height:31px;}
+.btn:hover{ background:#5a97ff; color:#fff;}
+.right-tabble{ background:#fff;}
+thead td{ height:30px; line-height:30px; text-align:center; background:#e8e8e8;}
+tbody{ width:100%; height:auto;}
+tbody tr{ width:100%; height:auto;margin-left:-1px;}
+tbody td{ width:auto; line-height:25px; padding:7px 5px; text-align: center; border-right:1px solid #e8e8e8;overflow-x:hidden; white-space: nowrap;text-overflow: ellipsis; border-bottom:1px solid #e8e8e8; }
+
+/*分页  结束*/
+
+/*客户质检 开始*/
+#talkBox{ width:100%; height:100%; overflow-x:hidden; overflow-y:auto; position:relative;}
+#talkBox .talk-dl{ width:75%; height:auto; padding:5px 0 5px 3%;}
+#talkBox i{ color:#989898;}
+#talkBox .talk-dt{ width:100%; height: auto; line-height:26px; font-size:14px;}
+#talkBox .talk-dt em{ width:auto; margin-right:10px;font-size:14px;}
+#talkBox .talk-dd{ line-height:20px; width:95%; margin:0 auto; font-size:14px;}
+#talkBox .me .talk-dt em,#talkBox .me .talk-dd{ color:#4d4d4d;}
+#talkBox .ta .talk-dt em,#talkBox .ta .talk-dd{ color:#5a97ff;}
+
+.pagewrap{ width:auto; margin-top:10px; height:auto; overflow-x:hidden; padding-top:10px;}
+/*分页  开始
+.page{ width:auto; margin-top:10px; height:auto; padding:7px 30px; background:#f0f0f0;clear:both;font-size:12px; text-align:right;}
+.page .disabled{  padding:3px 6px 3px 6px; color:#999999;border-radius:3px;}
+.page .current{padding:3px 6px 3px 6px; color:#f2f2f2; background:#5a97ff; border-radius:3px;}
+.page a{ padding:3px 6px 3px 6px; color:#999999; border-radius:3px;}
+.page a:hover{color:#f2f2f2; background:#5a97ff;border-radius:3px;}
+a.updown{ background:none;}
+a.updown:hover{ background:none; color:#5a97ff;}
+a.updown.current{ background:none; color:#5a97ff;}*/
+/*分页  结束*/
